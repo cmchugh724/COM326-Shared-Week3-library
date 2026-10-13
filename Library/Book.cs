@@ -22,7 +22,7 @@ namespace Library
             set
             {
                 // Ensure name does not contain any numbers
-                if (!value.Any(char.IsDigit) && value != "")
+                if (value != "")
                 {
                     title = value;
                 }
@@ -55,14 +55,14 @@ namespace Library
             get { return isbn; }
             set
             {
-                // Ensure isbn does not contain any numbers
-                if (!value.Any(char.IsDigit) && value != "")
+                
+                if (value != "")
                 {
                     isbn = value;
                 }
                 else
                 {
-                    Console.WriteLine("Error: Book ISBN cannot be blank or contain numbers.");
+                    Console.WriteLine("Error: Book ISBN cannot be blank.");
                 }
             }
         }
