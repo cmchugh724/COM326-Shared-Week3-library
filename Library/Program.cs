@@ -1,4 +1,11 @@
 using Library;
+using System.Diagnostics.CodeAnalysis;
+
+
+List<Book> books = new List<Book>();
+List<Member> members = new List<Member>();
+
+
 
 Book book = new Book();
 // This information is for one book in our library
